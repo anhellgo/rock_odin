@@ -45,32 +45,6 @@
       }
     }
 
-
-    // function playRound(playerSelection, computerSelection) {
-    //   if (playerSelection.toUpperCase() == computerSelection) {
-    //     return 'Player Chose ' + playerSelection.toUpperCase() + ' and Computer chose ' + computerSelection + ' so it is a tie!';
-    //   } else if (playerSelection.toUpperCase() == 'ROCK' && computerSelection=='PAPER') {
-    //     return compWin++
-    //     return 'Player Chose ' + playerSelection.toUpperCase() + ' and Computer chose ' + computerSelection + ' so Computer wins! Cscore = ' + compWin;
-    //   } else if (playerSelection.toUpperCase() == 'ROCK' && computerSelection=='SCISSORS') {
-    //     return playWin++
-    //     return 'Player Chose ' + playerSelection.toUpperCase() + ' and Computer chose ' + computerSelection + ' so Player wins! Pscore = ' + playWin;
-    //   } else if (playerSelection.toUpperCase() == 'PAPER' && computerSelection=='SCISSORS') {
-    //     return compWin++
-    //     return 'Player Chose ' + playerSelection.toUpperCase() + ' and Computer chose ' + computerSelection + ' so Computer wins! Cscore = ' + compWin;
-    //   } else if (playerSelection.toUpperCase() == 'PAPER' && computerSelection=='ROCK') {
-    //     return playWin++
-    //     return 'Player Chose ' + playerSelection.toUpperCase() + ' and Computer chose ' + computerSelection + ' so Player wins! Pscore = ' + playWin;
-    //   } else if (playerSelection.toUpperCase() == 'SCISSORS' && computerSelection=='ROCK') {
-    //     return compWin++
-    //     return 'Player Chose ' + playerSelection.toUpperCase() + ' and Computer chose ' + computerSelection + ' so Computer wins! Cscore = ' + compWin;
-    //   } else if (playerSelection.toUpperCase() == 'SCISSORS' && computerSelection=='PAPER') {
-    //     return playWin++
-    //     return 'Player Chose ' + playerSelection.toUpperCase() + ' and Computer chose ' + computerSelection + ' so Player wins! Pscore = ' + playWin;
-
-    //   }
-    // }
-
     function playGame() {
       for (let i = 0; i < 5; i++) {
         console.log('Round' + (i+1) + ':');
@@ -85,20 +59,10 @@
       } else if (compWin > playWin) {
         return 'Player: ' + playWin + ' Comp: ' + compWin + ' Computer Wins!';
       } else {
-        return 'Player: ' + playWin + ' Comp: ' + compWin + 'Tie!';
+        return 'Player: ' + playWin + ' Comp: ' + compWin + ' Tie!';
       }
-      // return 'Player: ' + playWin + ' Comp: ' + compWin;
     }
 
-    // function playGame() {
-    //   playRound(playerSelection, computerSelection);
-    //   return playWin
-    // }
-
-    // let playerSelection = prompt('Play a round');
-    // let computerSelection = getComputerChoice();
-
-    // console.log(playRound(playerSelection,computerSelection))
     console.log(playGame())
 
   </script>
